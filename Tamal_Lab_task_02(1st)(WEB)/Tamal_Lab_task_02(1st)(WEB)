@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tamal Lab Task 02</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lists, Links and Images">
+</head>
+<body>
+
+<h1>Tamal Lab Task 02</h1>
+
+<h2>Programming Languagejjjs</h2>
+<ul>
+    <li>C</li>
+    <li>C++</li>
+    <li>Java</li>
+    <li>Python</li>
+    <li>JavaScript</li>
+</ul>
+
+<h2>Steps to Build a Website</h2>
+<ol>
+    <li>Plan the site</li>
+    <li>Create HTML</li>
+    <li>Add content</li>
+    <li>Style with CSS</li>
+    <li>Publish</li>
+</ol>
+
+<h2>Web Technologies</h2>
+<dl>
+    <dt>HTML</dt>
+    <dd>Structure of web page</dd>
+
+    <dt>CSS</dt>
+    <dd>Design of web page</dd>
+
+    <dt>JavaScript</dt>
+    <dd>Adds interactivity</dd>
+</dl>
+
+<h2>External Link</h2>
+<a href="https://www.aiub.edu" target="_blank">Visit AIUB</a>
+
+<br><br>
+<a href="#about">Go to About Section</a>
+
+<h2>Image</h2>
+<img src="AIUB_IMG.png" alt="AIUB Logo" width="150">
+
+<h2 id="about">About</h2>
+<p>This is the internal link section.</p>
+
+</body>
+</html>
