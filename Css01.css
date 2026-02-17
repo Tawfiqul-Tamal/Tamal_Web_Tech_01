@@ -1,0 +1,13 @@
+* {
+    background-color: #f2f2f2;
+    font-family: Verdana;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+#mainTitle {
+    font-size: 32px;
+}
