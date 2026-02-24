@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tamal Lab Task 01</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="JavaScript Basics and User Interaction">
+
+    <style>
+        p {
+            font-size: 18px;
+            font-family: Arial;
+            color: darkgreen;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        * {
+            background-color: #f2f2f2;
+            font-family: Verdana;
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        #mainTitle {
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 id="mainTitle">Tamal JavaScript Lab Task 01</h1>
+
+<h2>Output Section</h2>
+<div id="output"></div>
+
+<script>
+
+
+
+    alert("Welcome to JavaScript Lab Task 01!");
+    console.log("Welcome to JavaScript Lab Task 01!");
+    document.write("<h3>Welcome Message using document.write()</h3>");
+
+
+
+    var studentName = "Md.Tawfiqul Islam Tamal";
+    var studentAge = 22;
+
+    var nextYearAge = studentAge + 1;  
+    var message = "Student Name: " + studentName + "<br>Student Age: " + studentAge; 
+
+    document.getElementById("output").innerHTML += 
+        "<h3>Result</h3>" +
+        message +
+        "<br>Age Next Year: " + nextYearAge + "<br><br>";
+
+
+
+    var num1 = Number(prompt("Enter first number:"));
+    var num2 = Number(prompt("Enter second number:"));
+
+    var sum = num1 + num2;
+    var difference = num1 - num2;
+    var product = num1 * num2;
+
+    document.getElementById("output").innerHTML +=
+        "<h3>Result</h3>" +
+        "Sum: " + sum + "<br>" +
+        "Difference: " + difference + "<br>" +
+        "Product: " + product + "<br><br>";
+
+
+
+    var checkNumber = Number(prompt("Enter a number to check Even or Odd:"));
+
+    if (checkNumber % 2 == 0) {
+        document.getElementById("output").innerHTML +=
+            "<h3>Result</h3>" +
+            checkNumber + " is Even.";
+    } else {
+        document.getElementById("output").innerHTML +=
+            "<h3>Result</h3>" +
+            checkNumber + " is Odd.";
+    }
+
+</script>
+
+</body>
+</html>
