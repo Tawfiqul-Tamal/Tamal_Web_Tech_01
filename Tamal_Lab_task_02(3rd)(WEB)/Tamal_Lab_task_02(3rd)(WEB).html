@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tamal Lab Task 02</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Functions, Loops and String Operations">
+    <link rel="stylesheet" href="Css02.css">
+</head>
+<body>
+
+<h1>Tamal Lab Task 02</h1>
+
+<h2>AIUB LOGO</h2>
+<img src="AIUB_IMG.png" alt="AIUB Logo">
+
+<h2>JavaScript Output Section</h2>
+<div id="output"></div>
+
+<br>
+<button onclick="checkStringLength()">Check String Length</button>
+
+<script>
+
+    function calculateSum(a, b) {
+        return a + b;
+    }
+
+    var sumResult = calculateSum(10, 20);
+
+    document.getElementById("output").innerHTML += 
+        "<h3>Result</h3>" +
+        "Sum of 10 and 20 is: " + sumResult + "<br><br>";
+
+
+   
+    document.getElementById("output").innerHTML += "<h3>Result</h3>";
+
+    
+    document.getElementById("output").innerHTML += "Numbers from 1 to 10:<br>";
+    for (var i = 1; i <= 10; i++) {
+        document.getElementById("output").innerHTML += i + " ";
+    }
+
+    document.getElementById("output").innerHTML += "<br><br>";
+
+    
+    document.getElementById("output").innerHTML += "Even numbers from 1 to 20:<br>";
+    var num = 2;
+    while (num <= 20) {
+        document.getElementById("output").innerHTML += num + " ";
+        num += 2;
+    }
+
+    document.getElementById("output").innerHTML += "<br><br>";
+
+
+   
+    var fullName = "Md. Tawfiqul Islam Tamal";
+
+    var upperName = fullName.toUpperCase();
+    var nameLength = fullName.length;
+    var firstName = fullName.split(" ")[0];
+
+    document.getElementById("output").innerHTML +=
+        "<h3>Result</h3>" +
+        "Full Name: " + fullName + "<br>" +
+        "Uppercase: " + upperName + "<br>" +
+        "Length: " + nameLength + "<br>" +
+        "First Name: " + firstName + "<br><br>";
+
+
+    
+    function checkStringLength() {
+        var userString = prompt("Enter a string:");
+
+        if (userString.length > 5) {
+            alert("String length is greater than 5.");
+        } else {
+            alert("String length is 5 or less.");
+        }
+    }
+
+</script>
+
+</body>
+</html>
