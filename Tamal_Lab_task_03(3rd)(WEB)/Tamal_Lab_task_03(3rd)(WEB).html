@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tamal Lab Task 03</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Arrays and Basic Objects">
+    <link rel="stylesheet" href="Css03.css">
+</head>
+<body>
+
+<header>
+    <h1>AMERICAN INTERNATIONAL UNIVERSITY-BANGLADESH</h1>
+    <h2>Tamal Lab Task 03 - Arrays & Objects</h2>
+</header>
+
+<nav>
+    <a href="#home">Home</a> |
+    <a href="#students">Students</a> |
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<section id="home">
+    <h2>JavaScript Output</h2>
+    <div id="output"></div>
+</section>
+
+<section id="students">
+    <h2>Student Information (HTML Table)</h2>
+
+    <table border="1">
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>CGPA</th>
+        </tr>
+        <tr>
+            <td>23-52978-3</td>
+            <td>Md. Tawfiqul Islam Tamal</td>
+            <td>CSE</td>
+            <td>3.95</td>
+        </tr>
+        <tr>
+            <td>23-52980-3</td>
+            <td>Rafid Hossain</td>
+            <td>CSE</td>
+            <td>3.83</td>
+        </tr>
+        <tr>
+            <td>23-52991-3</td>
+            <td>Md. Abu Siam</td>
+            <td>CSE</td>
+            <td>3.96</td>
+        </tr>
+    </table>
+</section>
+
+<section id="box-model">
+    <h2>Box Model Demonstration</h2>
+    <div class="div1">Div 1 - Normal Box</div>
+    <div class="div2">Div 2 - Larger Padding</div>
+    <div class="div3">Div 3 - Border-Box</div>
+</section>
+
+<section id="display-demo">
+    <h2>Display Properties</h2>
+    <div class="block">Block Div</div>
+    <span class="inline">Inline Span 1</span>
+    <span class="inline">Inline Span 2</span>
+    <div class="inline-block">Inline-Block Div 1</div>
+    <div class="inline-block">Inline-Block Div 2</div>
+</section>
+
+<section id="visibility-demo">
+    <h2>Visibility vs Display</h2>
+    <div class="hidden">This is visibility: hidden</div>
+    <div class="none">This is display: none</div>
+</section>
+
+</main>
+
+<footer id="contact">
+    <p>23-52978-3@student.aiub.edu | Department of Computer Science & Engineering, AIUB</p>
+</footer>
+
+<script>
+
+var output = document.getElementById("output");
+
+
+
+var courses = ["Web Technologies", "Data Structures", "Algorithms", "Database Systems", "Artificial Intelligence"];
+
+output.innerHTML += "<h3>Arrays</h3>";
+
+for (var i = 0; i < courses.length; i++) {
+    output.innerHTML += courses[i] + "<br>";
+}
+
+courses.push("Machine Learning");
+
+output.innerHTML += "<br><strong>After Adding New Course:</strong><br>";
+
+for (var i = 0; i < courses.length; i++) {
+    output.innerHTML += courses[i] + "<br>";
+}
+
+
+
+output.innerHTML += "<br><h3>Array Operations</h3>";
+
+output.innerHTML += "Array Length: " + courses.length + "<br>";
+
+courses.pop();
+courses.unshift("Computer Networks");
+
+output.innerHTML += "<br><strong>Final Array:</strong><br>";
+
+for (var i = 0; i < courses.length; i++) {
+    output.innerHTML += courses[i] + "<br>";
+}
+
+var student = {
+    name: "Md. Tawfiqul Islam Tamal",
+    id: "23-52978-3",
+    department: "CSE",
+    cgpa: 3.95
+};
+
+output.innerHTML += "<br><h3>Basic Object</h3>";
+output.innerHTML += "Name: " + student.name + "<br>";
+output.innerHTML += "ID: " + student.id + "<br>";
+output.innerHTML += "Department: " + student.department + "<br>";
+output.innerHTML += "CGPA: " + student.cgpa + "<br>";
+
+
+var students = [
+    { name: "Tamal", id: "23-52978-3", department: "CSE", cgpa: 3.95 },
+    { name: "Rafid", id: "23-52980-3", department: "CSE", cgpa: 3.83 },
+    { name: "Siam", id: "23-52991-3", department: "CSE", cgpa: 3.96 }
+];
+
+output.innerHTML += "<br><h3>Array of Objects</h3>";
+
+for (var i = 0; i < students.length; i++) {
+    output.innerHTML += "<br><strong>Student " + (i + 1) + "</strong><br>";
+    output.innerHTML += "Name: " + students[i].name + "<br>";
+    output.innerHTML += "ID: " + students[i].id + "<br>";
+    output.innerHTML += "Department: " + students[i].department + "<br>";
+    output.innerHTML += "CGPA: " + students[i].cgpa + "<br>";
+}
+
+</script>
+
+</body>
+</html>
