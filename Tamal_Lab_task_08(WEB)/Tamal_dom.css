@@ -1,0 +1,84 @@
+body{
+font-family: Arial;
+background:#fafaf3;
+padding:20px;
+}
+
+h1{
+text-align:center;
+}
+
+form{
+text-align:center;
+margin-bottom:20px;
+}
+
+input{
+padding:8px;
+margin:5px;
+}
+
+button{
+padding:8px 12px;
+cursor:pointer;
+}
+
+#student-list{
+list-style:none;
+padding:0;
+max-width:500px;
+margin:auto;
+}
+
+.student-item{
+background:white;
+padding:10px;
+margin-bottom:8px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+border:1px solid #ddd;
+}
+
+.btn-edit{
+background:#4caf50;
+color:white;
+border:none;
+}
+
+.btn-delete{
+background:#f44336;
+color:white;
+border:none;
+margin-left:5px;
+}
+
+.present{
+background:#b6ffb6;
+}
+
+.highlight{
+border:3px solid blue;
+}
+
+.fixed-controls{
+  position: fixed;
+  bottom: 200px; 
+  left: 20px;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4e4c4c;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  font-size: 14px;
+}
