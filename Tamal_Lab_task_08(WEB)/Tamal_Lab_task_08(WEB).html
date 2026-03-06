@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tamal Student Management System</title>
+<link rel="stylesheet" href="Tamal_dom.css">
+</head>
+
+<body>
+
+<h1>Tamal Student Management System</h1>
+
+<form id="student-form">
+
+<label>Student Name:</label>
+<input type="text" id="student-name" placeholder="Enter name">
+
+<label>Roll No:</label>
+<input type="text" id="student-roll" placeholder="Enter roll">
+
+<button type="submit" id="add-btn" disabled>Add</button>
+
+</form>
+
+<br>
+
+<input type="text" id="search" placeholder="Search student">
+
+<h2>Student List</h2>
+
+<ul id="student-list" class="student-list"></ul>
+
+
+<div class="fixed-controls">
+  <p id="total">Total students: 0</p>
+  <p id="attendance">Present: 0 , Absent: 0</p>
+  <button id="sort-btn">Sort A-Z</button>
+  <button id="highlight-btn">Highlight First Student</button>
+</div>
+
+<footer class="footer">
+<p>© 2026 Tamal Student Management System | Developed by Md. Tawfiqul Islam Tamal (23-52978-3@student.aiub.edu)</p>
+</footer>
+
+<script src="Tamal_dom.js"></script>
+
+</body>
+</html>
