@@ -36,6 +36,9 @@ li.classList.add('student-item');
 let span = document.createElement('span');
 span.textContent = roll + " - " + name;
 
+let actions = document.createElement('div');
+actions.classList.add('student-actions');
+
 let checkbox = document.createElement('input');
 checkbox.type = "checkbox";
 
@@ -93,10 +96,12 @@ updateAttendance();
 
 };
 
+actions.appendChild(checkbox);
+actions.appendChild(editBtn);
+actions.appendChild(deleteBtn);
+
 li.appendChild(span);
-li.appendChild(checkbox);
-li.appendChild(editBtn);
-li.appendChild(deleteBtn);
+li.appendChild(actions);
 
 list.appendChild(li);
 
